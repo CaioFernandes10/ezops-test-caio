@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti&family=Montserrat&display=swap');
+
+html, body {
+    height: 100%;
+    background-color: rgba(49, 49, 49, 0.89);
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #chat {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+   
+  }
+  
+  .inputs {
+    width: 60vw;
+    border: 1px solid rgb(255, 255, 255);
+    height: 5vw;
+    padding: 0 2vw;
+    font-size: 1.5vw;
+  }
+ 
+  .buttons:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .buttons {
+    width: 60vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 5vw;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    color: rgb(255, 255, 255);
+    margin-top: 1vw;
+    border: none;
+  }
+  border{
+    animation-name: ColorPalette;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+  }
+  .messages {
+    width: 60vw;
+    height: 40vw;
+    margin: 2vw 0;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2vw;
+    color:rgb(255, 255, 255);
+    border-radius: 20px;
+    border-width: 5px;
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+  }
+  .colors {
+    animation-name: ColorPalette;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+   
+  }
+  @keyframes ColorPalette {
+    0% {
+      color: #5cf5ed;
+    }
+    25% {
+      color: #04aa86;
+    }
+    50% {
+      color: #4e96f3;
+    }
+    75% {
+      color: #01a566;
+    }
+    100% {
+      color: #00aa85;
+    }
+  }
+  
+  
+  .btn-grad {background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+   .
+  
