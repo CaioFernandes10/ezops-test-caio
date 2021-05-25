@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "CaioFernandes10/ezops-test-caio",
+  "pipelineDirectory": "ezops-test-caio",
+  "workspaceDirectory": "ezops-test-caio\\ezops-test-caio",
+  "repositories": {
+    "CaioFernandes10/ezops-test-caio": {
+      "repositoryPath": "ezops-test-caio\\ezops-test-caio",
+      "lastRunOn": "05/25/2021 19:13:02 -03:00"
+    }
+  },
+  "lastRunOn": "05/25/2021 19:30:27 -03:00"
+}

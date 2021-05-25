@@ -1,0 +1,2936 @@
+[2021-05-25 22:30:26Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-05-25 22:30:26Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:26Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:26Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials'
+[2021-05-25 22:30:26Z INFO Worker] Version: 2.278.0
+[2021-05-25 22:30:26Z INFO Worker] Commit: 62d926efce35d3ea16d7624a25aaa5b300737def
+[2021-05-25 22:30:26Z INFO Worker] Culture: pt-BR
+[2021-05-25 22:30:26Z INFO Worker] UI Culture: pt-BR
+[2021-05-25 22:30:26Z INFO Worker] Waiting to receive the job message from the channel.
+[2021-05-25 22:30:26Z INFO Worker] Message received.
+[2021-05-25 22:30:27Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/teste.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "condition": "success()",
+      "id": "ac54684b-7e87-52af-d22e-f1eb8618a6f2",
+      "name": "actionscheckout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v1",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 29,
+        "col": 15,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 32,
+        "col": 13,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 32,
+              "col": 13,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 32,
+              "col": 27,
+              "expr": "matrix.node-version"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "7fde2b83-6d88-536f-a17e-4f6b3f7c449b",
+      "name": "actionssetup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 33,
+              "col": 14,
+              "lit": "npm install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "3c9ea558-3bcc-5427-1e2f-678368504d08",
+      "name": "run1"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 14,
+              "lit": "npm start"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "7e6c2c10-7d3d-502a-1bba-17874d339b8d",
+      "name": "run2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system": {
+      "value": "actions"
+    },
+    "system.hosttype": {
+      "value": "actions"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.collectionId": {
+      "value": "ddb099aa-f709-4521-8efb-c7bda228330e"
+    },
+    "system.collectionUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/"
+    },
+    "system.taskDefinitionsUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/"
+    },
+    "system.pipelineStartTime": {
+      "value": "2021-05-25 22:30:23+00:00"
+    },
+    "system.definitionId": {
+      "value": "3"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UseContextNameForGITHUBACTION": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "6"
+    },
+    "build.containerId": {
+      "value": "811"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/teste.yml"
+    },
+    "system.definitionName": {
+      "value": "ezops-test-caio"
+    },
+    "system.planId": {
+      "value": "a41b6ded-442b-4fa9-9e4b-442a27f6bcb7"
+    },
+    "system.timelineId": {
+      "value": "a41b6ded-442b-4fa9-9e4b-442a27f6bcb7"
+    },
+    "system.stageDisplayName": {
+      "value": "__default"
+    },
+    "system.stageId": {
+      "value": "96ac2280-8cb4-5df5-99de-dd2da759617d"
+    },
+    "system.stageName": {
+      "value": "__default"
+    },
+    "system.stageAttempt": {
+      "value": "1"
+    },
+    "system.phaseDisplayName": {
+      "value": "deploy"
+    },
+    "system.phaseId": {
+      "value": "d4a9a205-d52e-57fb-7b17-15a9d984af62"
+    },
+    "system.phaseName": {
+      "value": "deploy"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "deploy._12_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "deploy"
+    },
+    "system.jobDisplayName": {
+      "value": "deploy (12.x)"
+    },
+    "system.jobId": {
+      "value": "4e48f8aa-96ca-5ed7-4791-1e83cf011cf0"
+    },
+    "system.jobName": {
+      "value": "_12_x"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 13,
+    "planId": "a41b6ded-442b-4fa9-9e4b-442a27f6bcb7",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/6",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "ezops-test-caio"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "CaioFernandes10"
+    }
+  },
+  "timeline": {
+    "id": "a41b6ded-442b-4fa9-9e4b-442a27f6bcb7",
+    "changeId": 5,
+    "location": null
+  },
+  "jobId": "4e48f8aa-96ca-5ed7-4791-1e83cf011cf0",
+  "jobDisplayName": "deploy (12.x)",
+  "jobName": "_12_x",
+  "requestId": 6,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "ddb099aa-f709-4521-8efb-c7bda228330e",
+          "ServerName": "8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+        },
+        {
+          "k": "repository",
+          "v": "CaioFernandes10/ezops-test-caio"
+        },
+        {
+          "k": "repository_owner",
+          "v": "CaioFernandes10"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/CaioFernandes10/ezops-test-caio.git"
+        },
+        {
+          "k": "run_id",
+          "v": "876578164"
+        },
+        {
+          "k": "run_number",
+          "v": "6"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "actor",
+          "v": "CaioFernandes10"
+        },
+        {
+          "k": "workflow",
+          "v": "CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "9c1988322c23f8238b47dd4986a8865ed0673632"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "63659793+CaioFernandes10@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "CaioFernandes10"
+                              },
+                              {
+                                "k": "username",
+                                "v": "CaioFernandes10"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update teste.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-05-25T19:30:20-03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "3ec7f5f9773119f430e860f7fd246a54b2f5f0b7"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/CaioFernandes10/ezops-test-caio/commit/0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/CaioFernandes10/ezops-test-caio/compare/9c1988322c23...0ac2f219314d"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "63659793+CaioFernandes10@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "CaioFernandes10"
+                          },
+                          {
+                            "k": "username",
+                            "v": "CaioFernandes10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update teste.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2021-05-25T19:30:20-03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "3ec7f5f9773119f430e860f7fd246a54b2f5f0b7"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/CaioFernandes10/ezops-test-caio/commit/0ac2f219314d5935bb6c10dec59cfe25ffde82f4"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "63659793+CaioFernandes10@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "CaioFernandes10"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/CaioFernandes10/ezops-test-caio.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1621802568.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "CaioFernandes10/ezops-test-caio"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/CaioFernandes10/ezops-test-caio.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/CaioFernandes10/ezops-test-caio"
+                    },
+                    {
+                      "k": "id",
+                      "v": 370153412.0
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "HTML"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "ezops-test-caio"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEwOlJlcG9zaXRvcnkzNzAxNTM0MTI="
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/63659793?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "63659793+CaioFernandes10@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/CaioFernandes10"
+                          },
+                          {
+                            "k": "id",
+                            "v": 63659793.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "CaioFernandes10"
+                          },
+                          {
+                            "k": "name",
+                            "v": "CaioFernandes10"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjYzNjU5Nzkz"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/CaioFernandes10/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/CaioFernandes10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1621981820.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 1360.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:CaioFernandes10/ezops-test-caio.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/CaioFernandes10/ezops-test-caio"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/teams"
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/CaioFernandes10/ezops-test-caio/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2021-05-25T22:24:00Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/CaioFernandes10/ezops-test-caio"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/63659793?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/CaioFernandes10"
+                    },
+                    {
+                      "k": "id",
+                      "v": 63659793.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "CaioFernandes10"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjYzNjU5Nzkz"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/CaioFernandes10/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/CaioFernandes10"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "12.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2021-05-25 22:30:27Z INFO JobRunner] Job ID 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0
+[2021-05-25 22:30:27Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/
+[2021-05-25 22:30:27Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-05-25 22:30:27Z INFO Worker] Listening for cancel message from the channel.
+[2021-05-25 22:30:27Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2021-05-25 22:30:27Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-05-25 22:30:27Z INFO JobServerQueue] Start process web console line queue.
+[2021-05-25 22:30:27Z INFO JobServerQueue] Start process file upload queue.
+[2021-05-25 22:30:27Z INFO JobServerQueue] Start process timeline update queue.
+[2021-05-25 22:30:27Z INFO ExecutionContext] Initialize GitHub context
+[2021-05-25 22:30:27Z INFO ExecutionContext] Initialize Env context
+[2021-05-25 22:30:27Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Worker.dll
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] binPath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] RootFolder: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.runner'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.runner
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] CredFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_migrated'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_migrated
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'Service': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.service'
+[2021-05-25 22:30:27Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.service
+[2021-05-25 22:30:27Z INFO ConfigurationStore] Read setting file: 311 chars
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:27Z INFO JobRunner] Starting the job execution context.
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO JobRunner] Validating directory permissions for: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Tools': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_tool'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:27Z INFO JobRunner] Getting job extension.
+[2021-05-25 22:30:27Z INFO JobRunner] Initialize job. Getting all job steps.
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.setup_info'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_PipelineMapping\CaioFernandes10/ezops-test-caio\PipelineFolder.json
+[2021-05-25 22:30:27Z INFO PipelineDirectoryManager] Updating job run properties.
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO JobExtension] Downloading actions
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:27Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:28Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:28Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f' into C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\_temp_d9056248-f6ed-4149-8e2e-e606e525797b\2bfe8b89-1f03-4822-b8ca-ebc76b04625c.zip.
+[2021-05-25 22:30:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1e220e35-b950-4c5c-87ae-b2685744080b', success rate: 1/1.
+[2021-05-25 22:30:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1e220e35-b950-4c5c-87ae-b2685744080b', success rate: 1/1.
+[2021-05-25 22:30:30Z INFO ActionManager] Finished getting action repository.
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:30Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/zipball/56899e050abffc08c2b3b61f3ec6a79a9dc3223d' into C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\_temp_68889008-9758-4ec7-9736-83440633a346\49644fe4-d32a-4928-932a-1941c17382e4.zip.
+[2021-05-25 22:30:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1e220e35-b950-4c5c-87ae-b2685744080b', success rate: 1/1.
+[2021-05-25 22:30:32Z INFO ActionManager] Finished getting action repository.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "outputs-attributes",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node12-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "step-env"
+]
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-05-25 22:30:32Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManager] Load action that reference repository from 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\checkout\v2'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-05-25 22:30:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-05-25 22:30:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-05-25 22:30:32Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Ignore action property author.
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2021-05-25 22:30:32Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManager] Load action that reference repository from 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\setup-node\v1'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Ignore action property author.
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2021-05-25 22:30:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-05-25 22:30:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-05-25 22:30:32Z INFO ActionManager] Action post node.js file: N/A.
+[2021-05-25 22:30:32Z INFO JobExtension] Adding .
+[2021-05-25 22:30:32Z INFO JobExtension] Adding .
+[2021-05-25 22:30:32Z INFO JobExtension] Adding .
+[2021-05-25 22:30:32Z INFO JobExtension] Adding .
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:32Z INFO JobExtension] Total accessible running process: 275.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO JobRunner] Total job steps: 4.
+[2021-05-25 22:30:32Z INFO JobRunner] Run all job steps.
+[2021-05-25 22:30:32Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2021-05-25 22:30:32Z INFO StepsRunner] Initialize Env context for step
+[2021-05-25 22:30:32Z INFO StepsRunner] Evaluating: success()
+[2021-05-25 22:30:32Z INFO StepsRunner] Result: true
+[2021-05-25 22:30:32Z INFO StepsRunner] Starting the step.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO StepsRunner] Which: 'chcp'
+[2021-05-25 22:30:32Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] Process started with process id 1040, waiting for process exit.
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] Finished process 1040 with exit code 0, and elapsed time 00:00:00.0103605.
+[2021-05-25 22:30:32Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManager] Load action that reference repository from 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\checkout\v2'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-05-25 22:30:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-05-25 22:30:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-05-25 22:30:32Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-05-25 22:30:32Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:32Z INFO ActionRunner] Write event payload to C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\_github_workflow\event.json
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "CaioFernandes10/ezops-test-caio"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2021-05-25 22:30:32Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2021-05-25 22:30:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command error
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command group
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-05-25 22:30:32Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:32Z INFO HostContext] Well known directory 'Externals': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals\node12\bin\node.exe'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\checkout\v2\dist/index.js"'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\ezops-test-caio\ezops-test-caio'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:32Z INFO ProcessInvokerWrapper] Process started with process id 17520, waiting for process exit.
+[2021-05-25 22:30:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:33Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-05-25 22:30:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:34Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2021-05-25 22:30:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Finished process 17520 with exit code 0, and elapsed time 00:00:04.4689188.
+[2021-05-25 22:30:37Z INFO StepsRunner] Step result: 
+[2021-05-25 22:30:37Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-05-25 22:30:37Z INFO StepsRunner] Current state: job state = ''
+[2021-05-25 22:30:37Z INFO StepsRunner] Processing step: DisplayName='Use Node.js 12.x'
+[2021-05-25 22:30:37Z INFO StepsRunner] Initialize Env context for step
+[2021-05-25 22:30:37Z INFO StepsRunner] Evaluating: success()
+[2021-05-25 22:30:37Z INFO StepsRunner] Result: true
+[2021-05-25 22:30:37Z INFO StepsRunner] Starting the step.
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO StepsRunner] Which: 'chcp'
+[2021-05-25 22:30:37Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Process started with process id 15032, waiting for process exit.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Finished process 15032 with exit code 0, and elapsed time 00:00:00.0068830.
+[2021-05-25 22:30:37Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:37Z INFO ActionManager] Load action that reference repository from 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\setup-node\v1'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Ignore action property author.
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment and add it to the PATH, additionally providing proxy support",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 14,
+          "lit": "10.x"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 13,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2021-05-25 22:30:37Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-05-25 22:30:37Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-05-25 22:30:37Z INFO ActionManager] Action post node.js file: N/A.
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:37Z INFO ActionRunner] Write event payload to C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\_github_workflow\event.json
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:37Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Input 'always-auth': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 7,
+  "col": 14,
+  "lit": "false"
+}
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Input 'registry-url': default value evaluate result: ""
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Input 'scope': default value evaluate result: ""
+[2021-05-25 22:30:37Z INFO ActionManifestManager] Input 'version': default value evaluate result: ""
+[2021-05-25 22:30:37Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command error
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command group
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-05-25 22:30:37Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:37Z INFO HostContext] Well known directory 'Externals': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals\node12\bin\node.exe'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\setup-node\v1\dist/index.js"'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\ezops-test-caio\ezops-test-caio'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:37Z INFO ProcessInvokerWrapper] Process started with process id 2000, waiting for process exit.
+[2021-05-25 22:30:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:37Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-05-25 22:30:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ac54684b-7e87-52af-d22e-f1eb8618a6f2', success rate: 1/1.
+[2021-05-25 22:30:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fde2b83-6d88-536f-a17e-4f6b3f7c449b', success rate: 1/1.
+[2021-05-25 22:30:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fde2b83-6d88-536f-a17e-4f6b3f7c449b', success rate: 1/1.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Finished process 2000 with exit code 0, and elapsed time 00:00:01.0910557.
+[2021-05-25 22:30:38Z INFO StepsRunner] Step result: 
+[2021-05-25 22:30:38Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-05-25 22:30:38Z INFO StepsRunner] Current state: job state = ''
+[2021-05-25 22:30:38Z INFO StepsRunner] Processing step: DisplayName='Run npm install'
+[2021-05-25 22:30:38Z INFO StepsRunner] Initialize Env context for step
+[2021-05-25 22:30:38Z INFO StepsRunner] Evaluating: success()
+[2021-05-25 22:30:38Z INFO StepsRunner] Result: true
+[2021-05-25 22:30:38Z INFO StepsRunner] Starting the step.
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:38Z INFO StepsRunner] Which: 'chcp'
+[2021-05-25 22:30:38Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Process started with process id 15468, waiting for process exit.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Finished process 15468 with exit code 0, and elapsed time 00:00:00.0075229.
+[2021-05-25 22:30:38Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:38Z INFO ActionRunner] Write event payload to C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\_github_workflow\event.json
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-05-25 22:30:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command error
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command group
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-05-25 22:30:38Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-05-25 22:30:38Z INFO ScriptHandler] Which: 'pwsh'
+[2021-05-25 22:30:38Z INFO ScriptHandler] Not found.
+[2021-05-25 22:30:38Z INFO ScriptHandler] Defaulting to powershell
+[2021-05-25 22:30:38Z INFO ScriptHandler] Which: 'powershell'
+[2021-05-25 22:30:38Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:38Z INFO ScriptHandler] Which: 'pwsh'
+[2021-05-25 22:30:38Z INFO ScriptHandler] Not found.
+[2021-05-25 22:30:38Z INFO ScriptHandler] Defaulting to powershell
+[2021-05-25 22:30:38Z INFO ScriptHandler] Which: 'powershell'
+[2021-05-25 22:30:38Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\88ac7f1c-7d52-4616-ac9d-29e8363aaabd.ps1'"'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\ezops-test-caio\ezops-test-caio'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:38Z INFO ProcessInvokerWrapper] Process started with process id 12748, waiting for process exit.
+[2021-05-25 22:30:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fde2b83-6d88-536f-a17e-4f6b3f7c449b', success rate: 1/1.
+[2021-05-25 22:30:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3c9ea558-3bcc-5427-1e2f-678368504d08', success rate: 1/1.
+[2021-05-25 22:30:38Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-05-25 22:30:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3c9ea558-3bcc-5427-1e2f-678368504d08', success rate: 1/1.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Finished process 12748 with exit code 0, and elapsed time 00:00:01.9829669.
+[2021-05-25 22:30:40Z INFO StepsRunner] Step result: 
+[2021-05-25 22:30:40Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-05-25 22:30:40Z INFO StepsRunner] Current state: job state = ''
+[2021-05-25 22:30:40Z INFO StepsRunner] Processing step: DisplayName='Run npm start'
+[2021-05-25 22:30:40Z INFO StepsRunner] Initialize Env context for step
+[2021-05-25 22:30:40Z INFO StepsRunner] Evaluating: success()
+[2021-05-25 22:30:40Z INFO StepsRunner] Result: true
+[2021-05-25 22:30:40Z INFO StepsRunner] Starting the step.
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:40Z INFO StepsRunner] Which: 'chcp'
+[2021-05-25 22:30:40Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Process started with process id 8120, waiting for process exit.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Finished process 8120 with exit code 0, and elapsed time 00:00:00.0076486.
+[2021-05-25 22:30:40Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:40Z INFO ActionRunner] Write event payload to C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\_github_workflow\event.json
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:40Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-05-25 22:30:40Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command error
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command group
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-05-25 22:30:40Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-05-25 22:30:40Z INFO ScriptHandler] Which: 'pwsh'
+[2021-05-25 22:30:40Z INFO ScriptHandler] Not found.
+[2021-05-25 22:30:40Z INFO ScriptHandler] Defaulting to powershell
+[2021-05-25 22:30:40Z INFO ScriptHandler] Which: 'powershell'
+[2021-05-25 22:30:40Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:40Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:40Z INFO ScriptHandler] Which: 'pwsh'
+[2021-05-25 22:30:40Z INFO ScriptHandler] Not found.
+[2021-05-25 22:30:40Z INFO ScriptHandler] Defaulting to powershell
+[2021-05-25 22:30:40Z INFO ScriptHandler] Which: 'powershell'
+[2021-05-25 22:30:40Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\556b4409-fb0c-4c87-80c4-f5f4328c1d6d.ps1'"'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\ezops-test-caio\ezops-test-caio'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:40Z INFO ProcessInvokerWrapper] Process started with process id 14580, waiting for process exit.
+[2021-05-25 22:30:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3c9ea558-3bcc-5427-1e2f-678368504d08', success rate: 1/1.
+[2021-05-25 22:30:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7e6c2c10-7d3d-502a-1bba-17874d339b8d', success rate: 1/1.
+[2021-05-25 22:30:41Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Finished process 14580 with exit code 1, and elapsed time 00:00:01.0358869.
+[2021-05-25 22:30:41Z INFO StepsRunner] Step result: Failed
+[2021-05-25 22:30:41Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2021-05-25 22:30:41Z INFO StepsRunner] Current state: job state = 'Failed'
+[2021-05-25 22:30:41Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2021-05-25 22:30:41Z INFO StepsRunner] Initialize Env context for step
+[2021-05-25 22:30:41Z INFO StepsRunner] Evaluating: always()
+[2021-05-25 22:30:41Z INFO StepsRunner] Result: true
+[2021-05-25 22:30:41Z INFO StepsRunner] Starting the step.
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO StepsRunner] Which: 'chcp'
+[2021-05-25 22:30:41Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Process started with process id 15856, waiting for process exit.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Finished process 15856 with exit code 0, and elapsed time 00:00:00.0071307.
+[2021-05-25 22:30:41Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:41Z INFO ActionManager] Load action that reference repository from 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\checkout\v2'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions'
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-05-25 22:30:41Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-05-25 22:30:41Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-05-25 22:30:41Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:41Z INFO ActionRunner] Write event payload to C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp\_github_workflow\event.json
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp'
+[2021-05-25 22:30:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "CaioFernandes10/ezops-test-caio"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2021-05-25 22:30:41Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2021-05-25 22:30:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command error
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command group
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-05-25 22:30:41Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:41Z INFO HostContext] Well known directory 'Externals': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\externals\node12\bin\node.exe'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_actions\actions\checkout\v2\dist/index.js"'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\ezops-test-caio\ezops-test-caio'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-05-25 22:30:41Z INFO ProcessInvokerWrapper] Process started with process id 13512, waiting for process exit.
+[2021-05-25 22:30:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7e6c2c10-7d3d-502a-1bba-17874d339b8d', success rate: 1/1.
+[2021-05-25 22:30:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7e6c2c10-7d3d-502a-1bba-17874d339b8d', success rate: 1/1.
+[2021-05-25 22:30:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'eb508972-19c0-458f-a657-71042f0833ba', success rate: 1/1.
+[2021-05-25 22:30:42Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-05-25 22:30:42Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:42Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:42Z INFO HostContext] Well known directory 'Work': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work'
+[2021-05-25 22:30:43Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2021-05-25 22:30:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'eb508972-19c0-458f-a657-71042f0833ba', success rate: 1/1.
+[2021-05-25 22:30:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'eb508972-19c0-458f-a657-71042f0833ba', success rate: 1/1.
+[2021-05-25 22:30:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:44Z INFO ProcessInvokerWrapper] Finished process 13512 with exit code 0, and elapsed time 00:00:02.8210447.
+[2021-05-25 22:30:44Z INFO StepsRunner] Step result: 
+[2021-05-25 22:30:44Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-05-25 22:30:44Z INFO StepsRunner] Current state: job state = 'Failed'
+[2021-05-25 22:30:44Z INFO JobRunner] Finalize job.
+[2021-05-25 22:30:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:30:44Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_diag'
+[2021-05-25 22:30:44Z INFO JobExtension] Initialize Env context
+[2021-05-25 22:30:44Z INFO JobExtension] Initialize steps context
+[2021-05-25 22:30:44Z INFO JobExtension] Total accessible running process: 275.
+[2021-05-25 22:30:44Z INFO JobRunner] Job result after all job steps finish: Failed
+[2021-05-25 22:30:44Z INFO JobRunner] Completing the job execution context.
+[2021-05-25 22:30:44Z INFO JobRunner] Shutting down the job server queue.
+[2021-05-25 22:30:44Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2021-05-25 22:30:44Z INFO JobServerQueue] All queue process task stopped.
+[2021-05-25 22:30:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c54fad85-99da-4f59-8794-4b9773390a37', success rate: 1/1.
+[2021-05-25 22:30:44Z INFO JobServerQueue] Web console line queue drained.
+[2021-05-25 22:30:44Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2021-05-25 22:30:45Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2021-05-25 22:30:45Z INFO JobServerQueue] File upload queue drained.
+[2021-05-25 22:30:45Z INFO JobServerQueue] Timeline update queue drained.
+[2021-05-25 22:30:45Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2021-05-25 22:30:45Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\_work\_temp
+[2021-05-25 22:30:45Z INFO JobRunner] Raising job completed event.
+[2021-05-25 22:30:45Z INFO Worker] Job completed.

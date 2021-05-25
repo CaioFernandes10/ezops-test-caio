@@ -1,0 +1,269 @@
+[2021-05-25 22:20:08Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials'
+[2021-05-25 22:20:08Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2021-05-25 22:20:08Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19041.
+[2021-05-25 22:20:08Z INFO Listener] Version: 2.278.0
+[2021-05-25 22:20:08Z INFO Listener] Commit: 62d926efce35d3ea16d7624a25aaa5b300737def
+[2021-05-25 22:20:08Z INFO Listener] Culture: pt-BR
+[2021-05-25 22:20:08Z INFO Listener] UI Culture: pt-BR
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO Listener] Validating directory permissions for: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO CommandLineParser] Parse
+[2021-05-25 22:20:08Z INFO CommandLineParser] Parsing 1 args
+[2021-05-25 22:20:08Z INFO CommandLineParser] parsing argument
+[2021-05-25 22:20:08Z INFO CommandLineParser] HasArgs: False
+[2021-05-25 22:20:08Z INFO CommandLineParser] Adding Command: run
+[2021-05-25 22:20:08Z INFO Listener] Arguments parsed
+[2021-05-25 22:20:08Z INFO Runner] ExecuteCommand
+[2021-05-25 22:20:08Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Listener.dll
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] binPath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] RootFolder: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.runner'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.runner
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] CredFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_migrated'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_migrated
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'Service': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.service'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.service
+[2021-05-25 22:20:08Z INFO CommandSettings] Flag 'help': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Flag 'version': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Flag 'commit': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Flag 'check': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Command 'configure': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Command 'remove': 'False'
+[2021-05-25 22:20:08Z INFO CommandSettings] Command 'warmup': 'False'
+[2021-05-25 22:20:08Z INFO ConfigurationManager] LoadSettings
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured()
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured: True
+[2021-05-25 22:20:08Z INFO ConfigurationManager] Is configured: True
+[2021-05-25 22:20:08Z INFO ConfigurationStore] Read setting file: 311 chars
+[2021-05-25 22:20:08Z INFO ConfigurationManager] Settings Loaded
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsServiceConfigured()
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsServiceConfigured: False
+[2021-05-25 22:20:08Z INFO CommandSettings] Command 'run': 'True'
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured()
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured: True
+[2021-05-25 22:20:08Z INFO ConfigurationManager] Is configured: True
+[2021-05-25 22:20:08Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2021-05-25 22:20:08Z INFO Runner] Set runner startup type - Manual
+[2021-05-25 22:20:08Z INFO CommandSettings] Flag 'once': 'False'
+[2021-05-25 22:20:08Z INFO Runner] RunAsync
+[2021-05-25 22:20:08Z INFO ConfigurationManager] LoadSettings
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured()
+[2021-05-25 22:20:08Z INFO ConfigurationStore] IsConfigured: True
+[2021-05-25 22:20:08Z INFO ConfigurationManager] Is configured: True
+[2021-05-25 22:20:08Z INFO ConfigurationManager] Settings Loaded
+[2021-05-25 22:20:08Z INFO MessageListener] {
+  "AgentId": 3,
+  "AgentName": "DESKTOP-63082M5",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23",
+  "GitHubUrl": "https://github.com/CaioFernandes10/ezops-test-caio",
+  "WorkFolder": "_work"
+}
+[2021-05-25 22:20:08Z INFO MessageListener] Loading Credentials
+[2021-05-25 22:20:08Z INFO ConfigurationStore] HasCredentials()
+[2021-05-25 22:20:08Z INFO ConfigurationStore] stored True
+[2021-05-25 22:20:08Z INFO CredentialManager] GetCredentialProvider
+[2021-05-25 22:20:08Z INFO CredentialManager] Creating type OAuth
+[2021-05-25 22:20:08Z INFO CredentialManager] Creating credential type: OAuth
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:08Z INFO HostContext] Well known directory 'Root': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner'
+[2021-05-25 22:20:08Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams'
+[2021-05-25 22:20:08Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:20:08Z INFO MessageListener] Attempt to create session.
+[2021-05-25 22:20:08Z INFO MessageListener] Connecting to the Runner Server...
+[2021-05-25 22:20:08Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-05-25 22:20:08Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-05-25 22:20:08Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-05-25 22:20:08Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-05-25 22:20:08Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-05-25 22:20:08Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-05-25 22:20:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-05-25 22:20:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-05-25 22:20:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-05-25 22:20:09Z INFO MessageListener] VssConnection created
+[2021-05-25 22:20:09Z INFO Terminal] WRITE LINE: 
+[2021-05-25 22:20:09Z INFO Terminal] WRITE LINE: 
+[2021-05-25 22:20:09Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 52208cb4-bd0f-4870-b5e7-db60856295b3
+ActivityId: b800fc03-3500-42d6-8f31-28c637fc25f3
+X-TFS-Session: e5be2bf1-180f-4dea-b0a1-70a06add8c90
+X-VSS-E2EID: 1145ee6e-f17a-4954-9c89-70337463525e
+X-VSS-SenderDeploymentId: 2c974d96-2c30-cef5-eff2-3e0511a903a5
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 835440BA41854C599FB58B44664DDE49 Ref B: RIO03EDGE0517 Ref C: 2021-05-25T22:20:09Z
+Date: Tue, 25 May 2021 22:20:08 GMT
+
+[2021-05-25 22:20:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:20:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:20:10Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-05-25 22:20:10Z INFO MessageListener] Session created.
+[2021-05-25 22:20:10Z INFO Terminal] WRITE LINE: 2021-05-25 22:20:10Z: Listening for Jobs
+[2021-05-25 22:20:10Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2021-05-25 22:20:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:20:13Z INFO MessageListener] Message '2' received from session '58d47415-75c7-4428-9c8d-ecfdff72ae68'.
+[2021-05-25 22:20:13Z INFO JobDispatcher] Job request 3 for plan c2e50db6-dfc7-43a5-b68a-990e2b1e6efa job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 received.
+[2021-05-25 22:20:13Z INFO JobDispatcher] Pull OrchestrationId c2e50db6-dfc7-43a5-b68a-990e2b1e6efa.deploy._12_x from JWT claims
+[2021-05-25 22:20:13Z INFO Terminal] WRITE LINE: 2021-05-25 22:20:13Z: Running job: deploy (12.x)
+[2021-05-25 22:20:13Z INFO JobDispatcher] Start renew job request 3 for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:20:13Z INFO JobDispatcher] Successfully renew job request 3, job is valid till 25/05/2021 22:30:13
+[2021-05-25 22:20:13Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Worker.exe'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2212 2224'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-25 22:20:13Z INFO ProcessInvokerWrapper] Process started with process id 13940, waiting for process exit.
+[2021-05-25 22:20:13Z INFO JobDispatcher] Send job request message to worker for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:20:14Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-25 22:20:14Z INFO JobNotification] Entering StartMonitor
+[2021-05-25 22:20:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:20:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:20:34Z INFO ProcessInvokerWrapper] Finished process 13940 with exit code 102, and elapsed time 00:00:20.5130059.
+[2021-05-25 22:20:34Z INFO JobDispatcher] Worker finished for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0. Code: 102
+[2021-05-25 22:20:34Z INFO JobDispatcher] finish job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 with result: Failed
+[2021-05-25 22:20:34Z INFO Terminal] WRITE LINE: 2021-05-25 22:20:34Z: Job deploy (12.x) completed with result: Failed
+[2021-05-25 22:20:34Z INFO JobDispatcher] Stop renew job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:20:34Z INFO JobDispatcher] job renew has been canceled, stop renew job request 3.
+[2021-05-25 22:20:34Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-25 22:20:34Z INFO JobNotification] Entering EndMonitor
+[2021-05-25 22:21:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:21:46Z INFO MessageListener] Message '3' received from session '58d47415-75c7-4428-9c8d-ecfdff72ae68'.
+[2021-05-25 22:21:46Z INFO JobDispatcher] Job request 4 for plan 5b6d41b8-3351-4740-a4cc-0ac64d5ab9e4 job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 received.
+[2021-05-25 22:21:46Z INFO JobDispatcher] Pull OrchestrationId 5b6d41b8-3351-4740-a4cc-0ac64d5ab9e4.deploy._12_x from JWT claims
+[2021-05-25 22:21:46Z INFO JobDispatcher] Job request 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 processed succeed.
+[2021-05-25 22:21:46Z INFO Terminal] WRITE LINE: 2021-05-25 22:21:46Z: Running job: deploy (12.x)
+[2021-05-25 22:21:46Z INFO JobDispatcher] Start renew job request 4 for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:21:47Z INFO JobDispatcher] Successfully renew job request 4, job is valid till 25/05/2021 22:31:46
+[2021-05-25 22:21:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Worker.exe'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2248 2300'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-25 22:21:47Z INFO ProcessInvokerWrapper] Process started with process id 8196, waiting for process exit.
+[2021-05-25 22:21:47Z INFO JobDispatcher] Send job request message to worker for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:21:47Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-25 22:21:47Z INFO JobNotification] Entering StartMonitor
+[2021-05-25 22:22:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:22:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:22:06Z INFO ProcessInvokerWrapper] Finished process 8196 with exit code 102, and elapsed time 00:00:19.1274427.
+[2021-05-25 22:22:06Z INFO JobDispatcher] Worker finished for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0. Code: 102
+[2021-05-25 22:22:06Z INFO JobDispatcher] finish job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 with result: Failed
+[2021-05-25 22:22:06Z INFO Terminal] WRITE LINE: 2021-05-25 22:22:06Z: Job deploy (12.x) completed with result: Failed
+[2021-05-25 22:22:06Z INFO JobDispatcher] Stop renew job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:22:06Z INFO JobDispatcher] job renew has been canceled, stop renew job request 4.
+[2021-05-25 22:22:06Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-25 22:22:06Z INFO JobNotification] Entering EndMonitor
+[2021-05-25 22:24:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:24:04Z INFO MessageListener] Message '4' received from session '58d47415-75c7-4428-9c8d-ecfdff72ae68'.
+[2021-05-25 22:24:04Z INFO JobDispatcher] Job request 5 for plan 9dcdc701-a82d-46c5-83e1-6883948d1c96 job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 received.
+[2021-05-25 22:24:04Z INFO JobDispatcher] Pull OrchestrationId 9dcdc701-a82d-46c5-83e1-6883948d1c96.deploy._12_x from JWT claims
+[2021-05-25 22:24:04Z INFO JobDispatcher] Job request 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 processed succeed.
+[2021-05-25 22:24:04Z INFO Terminal] WRITE LINE: 2021-05-25 22:24:04Z: Running job: deploy (12.x)
+[2021-05-25 22:24:04Z INFO JobDispatcher] Start renew job request 5 for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:24:05Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 25/05/2021 22:34:04
+[2021-05-25 22:24:05Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Worker.exe'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2300 2204'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-25 22:24:05Z INFO ProcessInvokerWrapper] Process started with process id 1272, waiting for process exit.
+[2021-05-25 22:24:05Z INFO JobDispatcher] Send job request message to worker for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:24:05Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-25 22:24:05Z INFO JobNotification] Entering StartMonitor
+[2021-05-25 22:24:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:24:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:24:24Z INFO ProcessInvokerWrapper] Finished process 1272 with exit code 100, and elapsed time 00:00:19.7571852.
+[2021-05-25 22:24:24Z INFO JobDispatcher] Worker finished for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0. Code: 100
+[2021-05-25 22:24:24Z INFO JobDispatcher] finish job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 with result: Succeeded
+[2021-05-25 22:24:24Z INFO Terminal] WRITE LINE: 2021-05-25 22:24:24Z: Job deploy (12.x) completed with result: Succeeded
+[2021-05-25 22:24:24Z INFO JobDispatcher] Stop renew job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:24:24Z INFO JobDispatcher] job renew has been canceled, stop renew job request 5.
+[2021-05-25 22:24:24Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-25 22:24:24Z INFO JobNotification] Entering EndMonitor
+[2021-05-25 22:30:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\.credentials_rsaparams
+[2021-05-25 22:30:26Z INFO MessageListener] Message '5' received from session '58d47415-75c7-4428-9c8d-ecfdff72ae68'.
+[2021-05-25 22:30:26Z INFO JobDispatcher] Job request 6 for plan a41b6ded-442b-4fa9-9e4b-442a27f6bcb7 job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 received.
+[2021-05-25 22:30:26Z INFO JobDispatcher] Pull OrchestrationId a41b6ded-442b-4fa9-9e4b-442a27f6bcb7.deploy._12_x from JWT claims
+[2021-05-25 22:30:26Z INFO JobDispatcher] Job request 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 processed succeed.
+[2021-05-25 22:30:26Z INFO Terminal] WRITE LINE: 2021-05-25 22:30:26Z: Running job: deploy (12.x)
+[2021-05-25 22:30:26Z INFO JobDispatcher] Start renew job request 6 for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:30:26Z INFO JobDispatcher] Successfully renew job request 6, job is valid till 25/05/2021 22:40:26
+[2021-05-25 22:30:26Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin\Runner.Worker.exe'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2564 2600'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Caio\Desktop\ezops-test-caio\actions-runner\bin'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-25 22:30:26Z INFO ProcessInvokerWrapper] Process started with process id 11316, waiting for process exit.
+[2021-05-25 22:30:26Z INFO JobDispatcher] Send job request message to worker for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:30:26Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-25 22:30:26Z INFO JobNotification] Entering StartMonitor
+[2021-05-25 22:30:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-25 22:30:45Z INFO ProcessInvokerWrapper] Finished process 11316 with exit code 102, and elapsed time 00:00:19.2433234.
+[2021-05-25 22:30:45Z INFO JobDispatcher] Worker finished for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0. Code: 102
+[2021-05-25 22:30:45Z INFO JobDispatcher] finish job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 with result: Failed
+[2021-05-25 22:30:45Z INFO Terminal] WRITE LINE: 2021-05-25 22:30:45Z: Job deploy (12.x) completed with result: Failed
+[2021-05-25 22:30:45Z INFO JobDispatcher] Stop renew job request for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0.
+[2021-05-25 22:30:45Z INFO JobDispatcher] job renew has been canceled, stop renew job request 6.
+[2021-05-25 22:30:45Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-25 22:30:45Z INFO JobNotification] Entering EndMonitor
+[2021-05-25 22:31:41Z INFO Terminal] WRITE LINE: Exiting...
+[2021-05-25 22:31:41Z INFO ConfigurationStore] IsServiceConfigured()
+[2021-05-25 22:31:41Z INFO ConfigurationStore] IsServiceConfigured: False
+[2021-05-25 22:31:41Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2021-05-25 22:31:41Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23/_apis/distributedtask/pools/1/messages?sessionId=58d47415-75c7-4428-9c8d-ecfdff72ae68&lastMessageId=5 has been cancelled.
+[2021-05-25 22:31:41Z INFO MessageListener] Get next message has been cancelled.
+[2021-05-25 22:31:41Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2021-05-25 22:31:41Z INFO JobDispatcher] Ensure WorkerDispather for job 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 run to finish, cancel any running job.
+[2021-05-25 22:31:41Z INFO JobDispatcher] Job request 4e48f8aa-96ca-5ed7-4791-1e83cf011cf0 processed succeed.
+[2021-05-25 22:31:41Z INFO Listener] Runner execution been cancelled.

@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 3,
+  "agentName": "DESKTOP-63082M5",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/8X9v52QGy5JsqFEJYhlKVRDQ1iNkLLm8pUXyKIlw0z0FREfX23",
+  "gitHubUrl": "https://github.com/CaioFernandes10/ezops-test-caio",
+  "workFolder": "_work"
+}
