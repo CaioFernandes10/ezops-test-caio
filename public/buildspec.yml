@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+    nodejs: 12.16
+  commands:
+    - npm install
+  build:
+    commands:
+      - node server.js
+  post_build:
+    commands:
+    - aws  --acl public-read
