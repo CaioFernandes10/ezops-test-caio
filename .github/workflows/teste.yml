@@ -32,4 +32,3 @@ jobs:
             node-version: ${{ matrix.node-version }}
       - run: npm install
  
-      - run: node server.js
